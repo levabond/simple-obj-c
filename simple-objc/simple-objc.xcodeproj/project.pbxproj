@@ -15,6 +15,8 @@
 		2545E7CA2583E2BF0061F489 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2545E7C92583E2BF0061F489 /* Assets.xcassets */; };
 		2545E7CD2583E2BF0061F489 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2545E7CB2583E2BF0061F489 /* LaunchScreen.storyboard */; };
 		2545E7D02583E2BF0061F489 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2545E7CF2583E2BF0061F489 /* main.m */; };
+		254C9DA0258E0F7A002205E2 /* NetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = 254C9D9F258E0F7A002205E2 /* NetworkService.m */; };
+		254C9DA9258E11B3002205E2 /* APIResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 254C9DA8258E11B3002205E2 /* APIResponse.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,10 @@
 		2545E7CC2583E2BF0061F489 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2545E7CE2583E2BF0061F489 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2545E7CF2583E2BF0061F489 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		254C9D9F258E0F7A002205E2 /* NetworkService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkService.m; sourceTree = "<group>"; };
+		254C9DA3258E0FA8002205E2 /* NetworkService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkService.h; sourceTree = "<group>"; };
+		254C9DA8258E11B3002205E2 /* APIResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APIResponse.m; sourceTree = "<group>"; };
+		254C9DAC258E15A2002205E2 /* APIResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIResponse.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +104,7 @@
 		2545E7D92583E2E70061F489 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				254C9DA5258E1186002205E2 /* Network */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -105,6 +112,8 @@
 		2545E7DA2583E2EE0061F489 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				254C9D9F258E0F7A002205E2 /* NetworkService.m */,
+				254C9DA3258E0FA8002205E2 /* NetworkService.h */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -117,6 +126,23 @@
 				2545E7CB2583E2BF0061F489 /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		254C9DA5258E1186002205E2 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				254C9DA6258E118F002205E2 /* Response */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		254C9DA6258E118F002205E2 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				254C9DA8258E11B3002205E2 /* APIResponse.m */,
+				254C9DAC258E15A2002205E2 /* APIResponse.h */,
+			);
+			path = Response;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,8 +214,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				254C9DA9258E11B3002205E2 /* APIResponse.m in Sources */,
 				2545E7D02583E2BF0061F489 /* main.m in Sources */,
 				2545E7C22583E2BC0061F489 /* ViewController.m in Sources */,
+				254C9DA0258E0F7A002205E2 /* NetworkService.m in Sources */,
 				2545E7BC2583E2BC0061F489 /* AppDelegate.m in Sources */,
 				2545E7BF2583E2BC0061F489 /* SceneDelegate.m in Sources */,
 				2545E7C82583E2BC0061F489 /* simple_objc.xcdatamodeld in Sources */,
