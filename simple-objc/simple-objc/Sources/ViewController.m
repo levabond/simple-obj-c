@@ -6,24 +6,31 @@
 //
 
 #import "ViewController.h"
+#import "../Services/NetworkService.h"
 
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
-    int i = 10;
-    NSString *str = @"test";
+NetworkService *networkService = nil;
+int i = 10;
+NSString *str = @"test";
     
-
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        
+    }
+    networkService = [NetworkService new];
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSArray *names = @[@"Lauta", @"Janet"];
-    
-    for (NSString *name in names) {
-        NSLog(@"Hello, %@", name);
-    }
+    networkService = [NetworkService new];
+    [networkService get:@"test"];
     
     [self conditions];
 }
