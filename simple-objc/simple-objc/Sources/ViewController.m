@@ -30,7 +30,7 @@ NSString *str = @"test";
 - (void)viewDidLoad {
     [super viewDidLoad];
     networkService = [NetworkService new];
-    [networkService get:@"test"];
+    [networkService get:@"https://jsonplaceholder.typicode.com/albums"];
     
     [self conditions];
 }
